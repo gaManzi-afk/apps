@@ -1,0 +1,364 @@
+{
+  "_descripcion": "Bots que buscan palabra en ENLACES (URLs) - 1 bot cada 30 minutos",
+  "_nota": "SIN credenciales. Busca en los URLs, no en el contenido.",
+
+  "base_url": "https://washingtoncitypaper.com/article/781944/developers-jeopardize-rent-control-affordable-housing-voluntary-agreements/",
+  "intervalo_minutos": 2,
+
+  "bots": [
+    {
+      "id": "bot_01",
+      "nombre": "Bot Enlaces - Suecia",
+      "habilitado": true,
+      "pais_vpn": "se",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_02",
+      "nombre": "Bot Enlaces - USA",
+      "habilitado": true,
+      "pais_vpn": "us",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_03",
+      "nombre": "Bot Enlaces - México",
+      "habilitado": true,
+      "pais_vpn": "mx",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_04",
+      "nombre": "Bot Enlaces - Colombia",
+      "habilitado": true,
+      "pais_vpn": "co",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_05",
+      "nombre": "Bot Enlaces - Canadá",
+      "habilitado": true,
+      "pais_vpn": "ca",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_06",
+      "nombre": "Bot Enlaces - UK",
+      "habilitado": true,
+      "pais_vpn": "gb",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_07",
+      "nombre": "Bot Enlaces - Alemania",
+      "habilitado": true,
+      "pais_vpn": "de",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_08",
+      "nombre": "Bot Enlaces - Francia",
+      "habilitado": true,
+      "pais_vpn": "fr",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_09",
+      "nombre": "Bot Enlaces - Japón",
+      "habilitado": true,
+      "pais_vpn": "jp",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+
+    {
+      "id": "bot_10",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+       {
+      "id": "bot_11",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+        {
+      "id": "bot_12",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+        {
+      "id": "bot_13",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+        {
+      "id": "bot_14",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+        {
+      "id": "bot_15",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+        {
+      "id": "bot_16",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+            {
+      "id": "bot_17",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+                {
+      "id": "bot_18",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+    
+                {
+      "id": "bot_19",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    },
+                {
+      "id": "bot_20",
+      "nombre": "Bot Enlaces - Australia",
+      "habilitado": true,
+      "pais_vpn": "au",
+      "palabra_clave": "Felipe",
+      "urls": [
+        "/article/781944/"
+      ],
+      "crawl": true,
+      "crawl_url": null,
+      "crawl_depth": 1,
+      "crawl_max_pages": 5
+    }
+  ],
+
+  "_instrucciones": {
+    "descripcion": "Sistema simplificado: SIN credenciales, busca palabra en ENLACES (URLs)",
+    "uso_basico": "python3 orchestrator_links.py --schedule",
+    "listar_bots": "python3 orchestrator_links.py --list-bots",
+    "ver_estado": "python3 orchestrator_links.py --status",
+    "ejecutar_uno": "python3 orchestrator_links.py --bot bot_01",
+    "ejecutar_todos": "python3 orchestrator_links.py --run-all"
+  },
+
+  "_parametros_bot": {
+    "id": "Identificador único",
+    "nombre": "Descripción",
+    "habilitado": "true/false",
+    "pais_vpn": "Código país Mullvad (se, us, mx, co, ca, gb, de, fr, jp, au, etc)",
+    "palabra_clave": "Palabra a buscar en los ENLACES",
+    "urls": "Rutas donde buscar enlaces",
+    "crawl": "true para buscar recursivamente, false para solo URLs indicadas",
+    "crawl_url": "URL inicial para crawl",
+    "crawl_depth": "Profundidad del crawl",
+    "crawl_max_pages": "Máximo de páginas"
+  },
+
+  "_ejemplo_flujo": {
+    "minuto_0": "bot_01 conecta a VPN Suecia, busca 'confidencial' en URLs/enlaces",
+    "minuto_30": "bot_02 conecta a VPN USA, busca 'urgente' en URLs/enlaces",
+    "minuto_60": "bot_03 conecta a VPN México, busca 'cambio' en URLs/enlaces",
+    "minuto_90": "bot_04 conecta a VPN Colombia, busca 'aprobado' en URLs/enlaces",
+    "minuto_120": "bot_05 conecta a VPN Canadá, busca 'error' en URLs/enlaces",
+    "minuto_150": "bot_06 conecta a VPN UK, busca 'seguridad' en URLs/enlaces",
+    "minuto_180": "bot_07 conecta a VPN Alemania, busca 'presupuesto' en URLs/enlaces",
+    "minuto_210": "bot_08 conecta a VPN Francia, busca 'proyecto' en URLs/enlaces",
+    "minuto_240": "bot_09 conecta a VPN Japón, busca 'cliente' en URLs/enlaces",
+    "minuto_270": "bot_10 conecta a VPN Australia, busca 'reunion' en URLs/enlaces",
+    "minuto_300": "Se repite con bot_01 (ciclo de 5 horas)"
+  },
+
+  "_resultado_ejemplo": {
+    "descripcion": "Ejemplo de resultado",
+    "archivo": "resultados/YYYYMMDD_HHMMSS/enlaces_confidencial.txt",
+    "contenido": [
+      "BÚSQUEDA EN ENLACES",
+      "Palabra clave: confidencial",
+      "Página: /documentos",
+      "Total enlaces: 45",
+      "Enlaces encontrados: 7",
+      "",
+      "ENLACES CON 'confidencial':",
+      "[1] https://intranet.empresa.com/documentos/confidencial-2024.pdf",
+      "[2] https://intranet.empresa.com/documentos/datos/confidencial-v2.doc",
+      "[3] https://intranet.empresa.com/reportes/confidencial-report.xlsx",
+      "[4] https://intranet.empresa.com/noticias/confidencial-announcement.html",
+      "[5] https://intranet.empresa.com/documentos/confidential-info.pdf",
+      "[6] https://intranet.empresa.com/admin/confidencial-settings.php",
+      "[7] https://intranet.empresa.com/archive/confidencial-2023.zip"
+    ]
+  }
+}

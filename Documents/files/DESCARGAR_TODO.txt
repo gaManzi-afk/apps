@@ -1,0 +1,223 @@
+╔════════════════════════════════════════════════════════════════╗
+║         SISTEMA COMPLETO DE BOTS - VERSIÓN FINAL              ║
+║     Búsqueda de Palabras en Enlaces (URLs)                    ║
+║     1 Bot Cada 30 Minutos desde País VPN Diferente            ║
+╚════════════════════════════════════════════════════════════════╝
+
+📦 ARCHIVOS A DESCARGAR (10 archivos principales)
+═══════════════════════════════════════════════════════════════
+
+1. bot_link_search.py          - Bot que busca palabra en URLs
+2. orchestrator_links.py        - Orquestador (1 bot cada 30 min)
+3. bots_links.json              - Configuración de 10 bots
+4. mullvad_manager.py           - Gestor de VPN Mullvad
+5. install_search.sh            - Instalador automático
+6. QUICKSTART_LINKS.md          - Guía rápida
+
+DOCUMENTACIÓN:
+7. VPN_EXPLICADO.md             - Explicación de Mullvad
+8. CREDENCIALES_EXPLICADO.md    - Aclaración de credenciales
+9. README.md                    - Documentación completa
+10. DESCARGAR_TODO.txt          - Este archivo
+
+═══════════════════════════════════════════════════════════════
+
+🚀 INSTALACIÓN (3 pasos)
+═══════════════════════════════════════════════════════════════
+
+PASO 1: Descargar todos los archivos
+   └─ Descargar los 6 archivos principales (arriba)
+   └─ Guardar en una carpeta: ~/bots_intranet/
+
+PASO 2: Instalar Mullvad (en Kali)
+   bash install_search.sh
+   
+   O manualmente:
+   sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc \
+     https://repository.mullvad.net/deb/mullvad-keyring.asc
+   
+   echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc \
+     arch=$(dpkg --print-architecture)] \
+     https://repository.mullvad.net/deb/stable stable main" | \
+     sudo tee /etc/apt/sources.list.d/mullvad.list
+   
+   sudo apt update
+   sudo apt install mullvad-vpn
+
+PASO 3: Ejecutar
+   cd ~/bots_intranet/
+   
+   source search_env/bin/activate
+   python3 orchestrator_links.py --schedule
+
+═══════════════════════════════════════════════════════════════
+
+✅ VERIFICAR INSTALACIÓN
+═══════════════════════════════════════════════════════════════
+
+# Mullvad funciona?
+mullvad --version
+mullvad status
+
+# Ver bots
+source search_env/bin/activate
+python3 orchestrator_links.py --list-bots
+
+# Probar un bot
+python3 orchestrator_links.py --bot bot_01
+
+# Ver logs
+tail -f orchestrator_links.log
+
+═══════════════════════════════════════════════════════════════
+
+🎯 EJECUTAR
+═══════════════════════════════════════════════════════════════
+
+# Activar environment
+source search_env/bin/activate
+
+# EJECUTAR (1 bot cada 30 min desde país VPN diferente)
+python3 orchestrator_links.py --schedule
+
+# En otra terminal, ver logs:
+tail -f orchestrator_links.log
+
+# Ver resultados:
+ls -la resultados/
+cat resultados/*/enlaces_*.txt
+
+═══════════════════════════════════════════════════════════════
+
+⚙️ COMANDOS ÚTILES
+═══════════════════════════════════════════════════════════════
+
+# Activar environment
+source search_env/bin/activate
+
+# Listar bots
+python3 orchestrator_links.py --list-bots
+
+# Ver estado
+python3 orchestrator_links.py --status
+
+# Probar un bot
+python3 orchestrator_links.py --bot bot_01
+
+# Ejecutar todos (testing)
+python3 orchestrator_links.py --run-all
+
+# Ejecutar scheduler (1 bot cada 30 min)
+python3 orchestrator_links.py --schedule
+
+# Ver VPN status
+mullvad status
+
+# Conectar a país (manual)
+mullvad relay set location se
+mullvad connect
+
+═══════════════════════════════════════════════════════════════
+
+📁 ESTRUCTURA FINAL
+═══════════════════════════════════════════════════════════════
+
+~/bots_intranet/
+├── bot_link_search.py
+├── orchestrator_links.py
+├── bots_links.json
+├── mullvad_manager.py
+├── install_search.sh
+├── QUICKSTART_LINKS.md
+├── search_env/                (creado por instalador)
+│   ├── bin/
+│   ├── lib/
+│   └── ...
+├── resultados/                (creado al ejecutar)
+│   ├── 20260116_080000/
+│   │   ├── enlaces_confidencial.txt
+│   │   ├── resumen_confidencial.txt
+│   │   └── ...
+│   └── ...
+└── orchestrator_links.log     (creado al ejecutar)
+
+═══════════════════════════════════════════════════════════════
+
+📖 CONFIGURACIÓN (opcional)
+═══════════════════════════════════════════════════════════════
+
+Editar bots_links.json:
+
+{
+  "base_url": "https://tu_intranet.com",    ← Tu intranet
+  
+  "bots": [
+    {
+      "id": "bot_01",
+      "palabra_clave": "confidencial",       ← Tu palabra
+      "urls": [
+        "/documentos",                       ← Tus URLs
+        "/noticias",
+        "/reportes"
+      ],
+      "pais_vpn": "se"                       ← País VPN
+    },
+    ... más bots
+  ]
+}
+
+═══════════════════════════════════════════════════════════════
+
+🌍 PAÍSES VPN DISPONIBLES
+═══════════════════════════════════════════════════════════════
+
+se = Suecia
+us = USA
+mx = México
+co = Colombia
+ca = Canadá
+gb = Reino Unido
+de = Alemania
+fr = Francia
+jp = Japón
+au = Australia
+nl = Países Bajos
+es = España
+it = Italia
+br = Brasil
+in = India
+sg = Singapur
+tw = Taiwán
+hk = Hong Kong
+nz = Nueva Zelanda
+ch = Suiza
+
+═══════════════════════════════════════════════════════════════
+
+💡 QUICK START KALI
+═══════════════════════════════════════════════════════════════
+
+1. Descargar archivos a ~/bots_intranet/
+
+2. Instalar Mullvad:
+   sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc \
+     https://repository.mullvad.net/deb/mullvad-keyring.asc
+   
+   echo "deb [signed-by=/usr/share/keyrings/mullvad-keyring.asc \
+     arch=$(dpkg --print-architecture)] \
+     https://repository.mullvad.net/deb/stable stable main" | \
+     sudo tee /etc/apt/sources.list.d/mullvad.list
+   
+   sudo apt update && sudo apt install mullvad-vpn
+
+3. Verificar Mullvad:
+   mullvad --version
+
+4. Ejecutar:
+   cd ~/bots_intranet/
+   source search_env/bin/activate
+   python3 orchestrator_links.py --schedule
+
+═══════════════════════════════════════════════════════════════
+
+✨ LISTO! El sistema está completamente funcional y listo para usar.
